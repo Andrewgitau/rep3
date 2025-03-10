@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
+      rel="stylesheet"
+    />
+    <title>KlassyCafe</title>
+    <link rel="icon" type="image/jpg" href="images/Favicon.jpg">
+  </head>
+  <style>
+    .nav-item:hover
+    {
+      color: salmon;
+    }
+    .nav-item
+    {
+      padding:1px 5px;
+    }
+
+    .navbar-brand
+    {
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .Klassy
+    {
+      font-style: italic;
+    }
+
+    #reservation{
+      color:salmon;
+      background-color:white;
+    }
+
+    #reservation:hover{color:darkgoldenrod}
+
+    #orange{
+     background-color: salmon;
+    }
+
+    .tus{
+      margin-left:40px;
+      padding-top:20px;
+    }
+
+    #picsabout{
+      display:inline-block;
+      padding:10px;
+      }
+
+    .carousel-inner{
+     margin-left:50px;
+
+    }
+
+    .chef
+      {
+        border:1px solid #555;
+        padding:5px;
+        background-color:rgba(240, 255, 255, 0.324);
+        display: inline-block;
+        border-radius: 5px;
+      }
+
+    .chef:hover
+      {
+        border:1px solid salmon;
+        color:salmon;
+        
+      }
+
+    figure p{
+      color:black;
+    }
+      
+      .part1{
+        margin-left: 30px;
+        }
+
+      .part2{
+        margin-left: 30px;
+        margin: 20px;
+        margin-right:15px;
+        padding:20px;
+        background-color: azure;
+        border:1px none white;
+        border-radius: 5px;
+      }
+
+      h2.part2{
+        text-align: center;
+        color: black;
+        
+      }
+
+      .details{
+        border-radius: 5px;
+        display: inline-block;
+        width:200px;
+        height:250px;
+        background-color: aliceblue;
+        color:black;
+        text-align: center;
+        padding: 40px 25px 20px;
+        margin-bottom:20px;
+      }
+    
+
+  </style>
+  <body>
+   <nav class="navbar-expand-lg bg-body-tertiary fixed-top" aria-hidden="true"></i>
+    <div class="container-fluid" id="navigate">
+      <ul class="navbar-nav me-auto mb-2 px-5 justify-content-end">
+        <a class="navbar-brand f-start" href="#" >KlassyCafe</a>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Chefs</a>
+        </li>
+        <li class="nav-item dropdown"> 
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Features</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Features List 1</a></li>
+            <li><a class="dropdown-item" href="#">Features List 2</a></li>
+            <li><a class="dropdown-item" href="#">Features List 3</a></li>
+          </ul>
+
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+   </nav>
+   <div class="row container-fluid" style="height:650px;">
+    <div class="col-sm-6" id="orange">
+      <h3 class="text-light" style="font-style: italic;">KlassyCafe</h3>
+      <p class="text-light">The best experience</p> 
+      <br>
+      <button type="button" class="btn" id="reservation">Make a reservation</button>
+    </div>
+    <div class="col-sm-6">
+      <img src="images/restaurante.jpg" alt="KlassyCafe" height="650px" width="630px">
+    </div>
+   </div>
+
+   <section class="row container-fluid">
+    <div class="col-sm-6 tus" style="padding-top:20px;">
+    <h2 style="color:salmon;">-ABOUT US</h2>
+    <h2><strong>We Leave A Delicious Memory For You</strong></h2>
+    <p>KlassyCafe is one of the best Restaurants in Kenya, located in Parklands, Nairobi... it has a serene atmosphere as it is some distance off the hustle and bustle of the main town. The food it offers is also very delicious, as our chefs are among the best in the country. Great attention is made to ensuring you have the best stay possible</p>
+
+    <section class="row container-fluid">
+    <div class="col-sm-4" id="picsabout">
+      <img src="images/French chicken.jpg" width="180px">
+    </div>
+    <div class="col-sm-4">
+      <img src="images/chinafood2.jpg" width="180px">
+    </div>
+    <div class="col-sm-4">
+      <img src="images/chinafood1.jpg" width="180px">
+    </div>
+    </section>
+   </div>
+    <div class="col-sm-4">
+      <img src="images/wwwwwwwwwwwwwwww.jpg" width="550px" height="500px" style="padding-top:20px;">
+    </div>
+
+   <section style="padding-top:40px;">
+   <div style="text-align:left; margin-left:80px;">
+    <p style="color:salmon; padding-top:30px;;">-OUR MENU</p>
+    <h3>Our selection of cakes with quality taste</h3>
+   </div>
+
+   <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2"></button>
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="3"></button>
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="4"></button>
+      </div>
+      
+        <div class="carousel-inner container-fluid" style="background-color: rgba(0, 255, 255, 0.1); border-radius:10px; margin-left:15px;">
+          <div class="carousel-item active" style="padding-left:200px;">
+            <img src="images/Chocolate Puff.jpg" class="d-inline-block" height="280px" width="500px">
+          </div>
+          <div class="carousel-item">
+            <img src="images/ricotta.jpg" class="d-inline-block" height="280px" width="500px">
+          </div>
+          <div class="carousel-item">
+            <img src="images/puff.jpg" class="d-inline-block" height="280px" width="500px">
+          </div>
+          <div class="carousel-item">
+            <img src="images/mousse.jpg" class="d-inline-block" height="280px" width="500px">
+          </div>
+          <div class="carousel-item">
+            <img src="images/ham&cheese.jpg" class="d-inline-block" height="280px" width="500px">
+          </div>
+        </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev" id="iii">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next" id="iii">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+   </div>
+   </section>
+
+   <section>
+    <div style="text-align:center;">
+      <h3><strong style="color:salmon;">OUR CHEFS</strong></h3>
+      <h3><strong>We offer the best ingredients for you</strong></h3>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <figure class="chef">
+          <img src="images/Randy.jpg" width="120px" height="150px">
+          <figcaption><h4>Randy Walker</h4><p><small>Pastry Chef</small></p></figcaption>
+        </figure>
+      </div>
+      <div class="col-sm-4">
+        <figure class="chef">
+          <image src="images/Peter.jpg" width="120px" height="150px">
+          <figcaption><h4>Peter Parkson</h4><p><small>Pancake chef</small></p></figcaption>
+        </figure>
+      </div>
+      <div class="col-sm-4">
+        <figure class="chef">
+          <image src="images/David.jpg" width="120px" height="150px">
+          <figurecaption><h4>David Martin</h4><p><small>Cookie Chef</small></p></figurecaption>
+        </figure>
+      </div>
+    </div>
+    
+   </section>
+
+   <section class="container-fluid">
+    <div class="row bg-secondary">
+      <div class="part1 col-sm-6">
+       <h2 style=color:salmon;>-CONTACT US</h2>
+       <h3>Here you can make a reservation Or just walk into our cafe</h3>
+       <p>Got dinner plans, we got you covered. Just reserve a spot 5 hours in advance.Stopping by,don't worry about not having a spot. You will be well catered for.</p>
+       <br>
+     
+       <div class="details">
+        <h4><strong>Phone Numbers</strong></h4>
+        <p>080-090-0990</p>
+        <p>080-090-0880</p>
+       </div>
+  
+       <div class="details">
+        <h4><strong>Email</strong></h4>
+        <p>hello@company.com</p>
+        <p>info@company.com</p>
+       </div>
+       
+      </div>
+  
+      <div class="part2 col-sm-6">
+        <h2 style="color: black;">Table Reservation</h2>
+        <table>
+          <th>
+            <tr>
+              <td>
+               <input type="text" name=""id="" placeholder="Your name*"><br><br>
+              </td>
+              <td>
+               <input type="date" placeholder="Date"><br><br>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="number" placeholder="Phone Number"><br><br>
+              </td>
+              <td>
+                <input type="email" placeholder="Your Email Address"><br><br>
+              </td>
+            </tr>
+             
+            <tr>
+              <td>
+               <input type="number" placeholder="Number of Guests"><br>
+              </td>
+              <td>
+                <input type="number" placeholder="Time">
+              </td>
+            </tr>
+            
+           
+          </th>
+          </table>
+      </div>
+  
+      </div>
+   </section>
+
+   <section>
+    <h2 style="color:salmon; text-align: center;">KLASSY WEEK</h2>
+    <h3 style="color:black; text-align: center;">This Week's Special Meal Offers</h3>
+    <table>
+      <thead>
+        <th></th>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="display:flex;">
+            <img src="images/French chicken.jpg" height="80px" width="80px">
+            <h3>Fresh Chicken Salad</h3>
+            <div style="background-color:salmon; border-radius:10px; text-align: center;">$10.50</div>
+
+          </td>
+          <td style="display:flex;">
+            <img src="images/Dolma.jpg" height="80px" width="80px">
+            <h3>Dolma</h3>
+            <div style="background-color:salmon; border-radius:10px; text-align: center; padding-bottom:10px;">$10.50</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="display:flex;">
+            <img src="images/Orange juice.jpg" height="80px" width="80px">
+            <h3>Orange Juice</h3>
+            <div style="background-color:salmon; border-radius:10px; text-align: center;">$8.50</div>
+          </td>
+          <td  class="p-25"  style="display:flex;">
+            <img src="images/Fruit salad.jpg" height="80px" width="80px">
+            <h3>Fruit Salad</h3>
+            <div style="background-color:salmon; border-radius:10px; text-align: center;">$12.50</div>
+
+          </td>
+        </tr>
+        
+      </tbody>
+    </table>
+
+   </section>
+
+  </body>
+</html>
